@@ -11,6 +11,7 @@ function playSound1(){
     let thisCard = this
     this.classList.add("highlighted");
 
+    //https://stackoverflow.com/questions/11103582/how-do-you-detect-when-html5-audio-has-finished-playing-more-than-once
     audio.addEventListener("ended", function(){
         audio.currentTime = 0;
         thisCard.classList.remove("highlighted");
