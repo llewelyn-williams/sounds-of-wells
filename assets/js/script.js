@@ -1,3 +1,24 @@
+document.getElementById("fullscreen").addEventListener("click", toggleFullScreen);
+
+function toggleFullScreen() {
+
+    
+    var doc = window.document;
+    var docEl = doc.documentElement;
+  
+    var requestFullScreen = docEl.requestFullscreen || docEl.mozRequestFullScreen || docEl.webkitRequestFullScreen || docEl.msRequestFullscreen;
+    var cancelFullScreen = doc.exitFullscreen || doc.mozCancelFullScreen || doc.webkitExitFullscreen || doc.msExitFullscreen;
+  
+    if(!doc.fullscreenElement && !doc.mozFullScreenElement && !doc.webkitFullscreenElement && !doc.msFullscreenElement) {
+      requestFullScreen.call(docEl);
+      document.getElementById("fullscreen").innerHTML = `<i class="fas fa-compress-arrows-alt"></i>`;
+    }
+    else {
+      cancelFullScreen.call(doc);
+      document.getElementById("fullscreen").innerHTML = `<i class="fas fa-expand-arrows-alt"></i>`;
+    }
+  }
+
 document.getElementById("card1").addEventListener("click", playSound1);
 document.getElementById("card2").addEventListener("click", playSound2);
 document.getElementById("card3").addEventListener("click", playSound3);
