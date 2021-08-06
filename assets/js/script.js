@@ -6,7 +6,7 @@ document.getElementById("card5").addEventListener("click", playSound5);
 document.getElementById("card6").addEventListener("click", playSound6);
 
 function playSound1(){
-    let audio = new Audio("assets/sounds/sound1.ogg");
+    let audio = new Audio("assets/sounds/peeing.ogg");
     audio.play();
 }
 
