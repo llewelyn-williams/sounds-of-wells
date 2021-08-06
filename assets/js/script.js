@@ -11,26 +11,26 @@ function playSound1(){
 }
 
 function playSound2(){
-    let audio = new Audio("assets/sounds/sound2.ogg");
+    let audio = new Audio("assets/sounds/mum-mum-mum.ogg");
     audio.play();
 }
 
 function playSound3(){
-    let audio = new Audio("assets/sounds/sound3.ogg");
+    let audio = new Audio("assets/sounds/scraping-toast.ogg");
     audio.play();
 }
 
 function playSound4(){
-    let audio = new Audio("assets/sounds/sound4.ogg");
+    let audio = new Audio("assets/sounds/i-shit-myself.ogg");
     audio.play();
 }
 
 function playSound5(){
-    let audio = new Audio("assets/sounds/sound5.ogg");
+    let audio = new Audio("assets/sounds/mouse-clicking.ogg");
     audio.play();
 }
 
 function playSound6(){
-    let audio = new Audio("assets/sounds/sound6.ogg");
+    let audio = new Audio("assets/sounds/running-down-the-stairs.ogg");
     audio.play();
 }
