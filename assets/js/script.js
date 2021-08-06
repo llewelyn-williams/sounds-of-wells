@@ -8,29 +8,81 @@ document.getElementById("card6").addEventListener("click", playSound6);
 function playSound1(){
     let audio = new Audio("assets/sounds/peeing.ogg");
     audio.play();
+    let thisCard = this
+    this.classList.add("highlighted");
+
+    audio.addEventListener("ended", function(){
+        audio.currentTime = 0;
+        thisCard.classList.remove("highlighted");
+        console.log("Ended");
+   });
+
 }
+
+function isPlaying(audelem) { return !audelem.paused; }
 
 function playSound2(){
     let audio = new Audio("assets/sounds/mum-mum-mum.ogg");
     audio.play();
+    let thisCard = this
+    this.classList.add("highlighted");
+
+    audio.addEventListener("ended", function(){
+        audio.currentTime = 0;
+        thisCard.classList.remove("highlighted");
+        console.log("Ended");
+   });
 }
 
 function playSound3(){
     let audio = new Audio("assets/sounds/scraping-toast.ogg");
     audio.play();
+    let thisCard = this
+    this.classList.add("highlighted");
+
+    audio.addEventListener("ended", function(){
+        audio.currentTime = 0;
+        thisCard.classList.remove("highlighted");
+        console.log("Ended");
+   });
 }
 
 function playSound4(){
     let audio = new Audio("assets/sounds/i-shit-myself.ogg");
     audio.play();
+    let thisCard = this
+    this.classList.add("highlighted");
+
+    audio.addEventListener("ended", function(){
+        audio.currentTime = 0;
+        thisCard.classList.remove("highlighted");
+        console.log("Ended");
+   });
+
 }
 
 function playSound5(){
     let audio = new Audio("assets/sounds/mouse-clicking.ogg");
     audio.play();
+    let thisCard = this
+    this.classList.add("highlighted");
+
+    audio.addEventListener("ended", function(){
+        audio.currentTime = 0;
+        thisCard.classList.remove("highlighted");
+        console.log("Ended");
+   });
 }
 
 function playSound6(){
     let audio = new Audio("assets/sounds/running-down-the-stairs.ogg");
     audio.play();
+    let thisCard = this
+    this.classList.add("highlighted");
+
+    audio.addEventListener("ended", function(){
+        audio.currentTime = 0;
+        thisCard.classList.remove("highlighted");
+        console.log("Ended");
+   });
 }

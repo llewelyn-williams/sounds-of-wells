@@ -47,6 +47,18 @@ footer {
     font-size: 2rem;
 }
 
+.progress {
+    height: 30px;
+    background-color: darkblue;
+    position: relative;
+    bottom: -50px;
+    width: 0px;
+}
+
+.highlighted {
+    box-shadow: -14px -14px 3px 1px darkcyan;
+}
+
 /* -------------------------------------------------- Media Queries */
 
 @media screen and (max-width: 420px) {
